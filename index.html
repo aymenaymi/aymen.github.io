@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aymen Mohammed | Graphic Designer & Social Media Manager</title>
+  <title>Aymen Mohammed | Graphic Designer, Web Developer & Social Media Manager</title>
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -369,7 +369,7 @@
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       margin-top: 40px;
     }
@@ -743,7 +743,7 @@
       }
       
       .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
     }
 
@@ -754,10 +754,6 @@
       
       .section h2 {
         font-size: 1.8rem;
-      }
-      
-      .stats-grid {
-        grid-template-columns: 1fr;
       }
       
       .btn {
@@ -808,10 +804,10 @@
   <header>
     <div class="grid-pattern"></div>
     <div class="header-content">
-      <div class="header-subtitle">Graphic Designer & Social Media Manager</div>
+      <div class="header-subtitle">Graphic Designer, Web Developer & Social Media Manager</div>
       <h1>Creating visual stories,<br><span class="header-highlight">brands, and digital experiences.</span></h1>
       <p>
-        I specialize in Graphic Design, Video Editing, and Social Media Management. 
+        I specialize in Graphic Design, Video Editing, Front-End Web Development and Social Media Management. 
         Transforming ideas into compelling visual content that engages audiences and builds brands.
       </p>
       <a href="#work" class="btn btn-primary">View My Portfolio</a>
@@ -891,7 +887,7 @@
     </div>
   </section>
 
-  <!-- About Section - UPDATED BIO -->
+  <!-- About Section - UPDATED with only 2+ years -->
   <section id="about" class="section">
     <div class="section-header">
       <div>
@@ -903,13 +899,18 @@
     <div class="about-content">
       <div class="about-text">
         <p>
-          I'm Aymen Mohammed, a passionate Graphic Designer and Social Media Manager based in Addis Ababa. 
-          I create visual content that tells stories, builds brands, and connects with audiences.
+          I'm Aymen Mohammed, a passionate Graphic Designer, Web Developer and Social Media Manager based in Addis Ababa. 
+          I create visual content that tells stories, builds brands, and connects with audiences. While also creating visually appealing and functional websites.
         </p>
         <p>
-          With expertise in both graphic design and social media management, I help businesses 
+          With expertise in graphic design, Web-development and social media management, I help businesses 
           establish a strong visual identity and maintain an engaging online presence. From logo 
           design to complete social media campaigns, I deliver creative solutions that drive results.
+          <p>
+  My technical skills in web development (HTML, CSS, JavaScript, Python) complement my design work, 
+  allowing me to create and implement complete digital solutions. From concept to code, I ensure 
+  designs are not just beautiful but also functional, responsive, and technically sound.
+</p>
         </p>
         <p>
           My approach combines creative vision with strategic thinking, ensuring every design 
@@ -920,16 +921,12 @@
       <div>
         <div class="stats-grid">
           <div class="stat-item">
-            <div class="stat-number">150+</div>
-            <div class="stat-label">Design Projects</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">4+</div>
+            <div class="stat-number">2+</div>
             <div class="stat-label">Years Experience</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">50+</div>
-            <div class="stat-label">Happy Clients</div>
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Projects Completed</div>
           </div>
         </div>
       </div>
@@ -1016,7 +1013,7 @@
     </div>
   </section>
 
-  <!-- Contact Section - UPDATED WITH YOUR PHONE NUMBER -->
+  <!-- Contact Section - UPDATED WITH YOUR FORMSPREE & NEW EMAIL -->
   <section id="contact" class="section">
     <div class="section-header">
       <div>
@@ -1035,7 +1032,7 @@
           </div>
           <div class="contact-details">
             <h4>Email</h4>
-            <p>aymenkelifa3@gmail.com</p>
+            <p><a href="mailto:aymiaymidogedoge@gmail.com" style="color: inherit; text-decoration: none;">aymiaymidogedoge@gmail.com</a></p>
           </div>
         </div>
         
@@ -1044,8 +1041,13 @@
             <i class="fas fa-phone"></i>
           </div>
           <div class="contact-details">
-            <h4>Phone</h4>
-            <p>+251 969 282 538</p>
+            <h4>Phone / WhatsApp</h4>
+            <p><a href="tel:+251969282538" style="color: inherit; text-decoration: none;">+251 969 282 538</a></p>
+            <p style="font-size: 0.9rem; color: var(--text-tertiary); margin-top: 5px;">
+              <a href="https://wa.me/251969282538" style="color: var(--text-secondary); text-decoration: underline;">
+                Click to message on WhatsApp
+              </a>
+            </p>
           </div>
         </div>
         
@@ -1064,52 +1066,88 @@
             <i class="fas fa-clock"></i>
           </div>
           <div class="contact-details">
-            <h4>Availability</h4>
-            <p>Available for freelance projects</p>
+            <h4>Response Time</h4>
+            <p>Usually within 24 hours</p>
           </div>
         </div>
       </div>
       
       <div class="contact-form">
-        <form id="contactForm">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <input type="text" placeholder="Project Type" required>
-          <textarea rows="5" placeholder="Tell me about your project" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+        <!-- Formspree Form - YOUR FORMSPREE URL ADDED -->
+        <form action="https://formspree.io/f/xrbnkdbz" method="POST" id="contactForm">
+          <!-- Required fields with name attributes -->
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Project Type (e.g., Logo Design, Social Media)" required>
+          <textarea name="message" rows="5" placeholder="Tell me about your project, timeline, and budget" required></textarea>
+          
+          <!-- Formspree hidden fields -->
+          <input type="hidden" name="_subject" value="New Portfolio Contact - Aymen Mohammed">
+          <input type="text" name="_gotcha" style="display:none">
+          
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
         </form>
+        
+        <!-- Success message (hidden by default) -->
+        <div id="form-success" style="display: none; margin-top: 20px; padding: 15px; background: rgba(42, 42, 42, 0.5); border: 1px solid var(--primary); border-radius: 5px; text-align: center;">
+          <p style="color: var(--text-primary); margin-bottom: 10px;">
+            <i class="fas fa-check-circle" style="color: #4CAF50; font-size: 1.2rem;"></i>
+            <strong>Message Sent Successfully!</strong>
+          </p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Thank you! I'll get back to you within 24 hours.
+          </p>
+        </div>
+        
+        <!-- Alternative contact methods -->
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+          <p style="color: var(--text-tertiary); font-size: 0.9rem; text-align: center;">
+            Prefer to contact me directly?<br>
+            <a href="mailto:aymiaymidogedoge@gmail.com" style="color: var(--text-secondary); text-decoration: underline; margin: 0 10px;">
+              <i class="fas fa-envelope"></i> Email
+            </a> 
+            or 
+            <a href="https://wa.me/251969282538" style="color: var(--text-secondary); text-decoration: underline; margin: 0 10px;">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer - UPDATED WITH SOCIAL LINKS & NEW EMAIL -->
   <footer>
     <div class="footer-content">
       <div class="footer-logo">AYMEN MOHAMMED</div>
       <p class="footer-tagline">
-        Graphic Designer & Social Media Manager creating visual content that engages audiences and builds brands.
+        Graphic Designer, Web Developer & Social Media Manager creating visual content that engages audiences and builds brands.
       </p>
       
       <div class="social-links">
-        <a href="#" class="social-link">
-          <i class="fab fa-behance"></i>
+        <!-- Add your actual social media links here -->
+        <a href="https://telegram.com/yourusername" class="social-link" target="_blank">
+          <i class="fab fa-telegram"></i>
         </a>
-        <a href="#" class="social-link">
-          <i class="fab fa-dribbble"></i>
+        <a href="https://facebook.com/yourusername" class="social-link" target="_blank">
+          <i class="fab fa-facebook"></i>
         </a>
-        <a href="#" class="social-link">
+        <a href="https://instagram.com/yourusername" class="social-link" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="social-link">
+        <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="#" class="social-link">
+        <a href="https://wa.me/251969282538" class="social-link" target="_blank">
           <i class="fab fa-whatsapp"></i>
         </a>
       </div>
       
       <div class="copyright">
-        © 2025 Aymen Mohammed. Graphic Designer & Social Media Manager.
+        © 2025 Aymen Mohammed. Graphic Designer, Web Developer & Social Media Manager.<br>
+        <small style="opacity: 0.7;">Email: aymiaymidogedoge@gmail.com | Phone: +251 969 282 538</small>
       </div>
     </div>
   </footer>
@@ -1203,11 +1241,47 @@
       });
     });
 
-    // Form submission
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    // Form submission with Formspree
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      alert('Thank you for your message! I will get back to you within 24 hours.');
-      this.reset();
+      
+      // Show loading state
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        const formData = new FormData(this);
+        const response = await fetch(this.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          // Show success message
+          document.getElementById('form-success').style.display = 'block';
+          
+          // Reset form
+          this.reset();
+          
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            document.getElementById('form-success').style.display = 'none';
+          }, 5000);
+        } else {
+          alert('There was an error sending your message. Please try again or email me directly.');
+        }
+      } catch (error) {
+        alert('Network error. Please check your connection and try again.');
+      } finally {
+        // Reset button state
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        submitBtn.disabled = false;
+      }
     });
 
     // Animate skill bars when they become visible
